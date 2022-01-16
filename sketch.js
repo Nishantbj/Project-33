@@ -88,6 +88,7 @@ function setup() {
   
   //button2.mouseClick(drop);
 
+  button.mouseClicked(remove_rope)
   button2.mouseClicked(drop);
 
   ellipseMode(RADIUS);
@@ -148,7 +149,7 @@ function remove_rope()
 {
   rope.break();
   con.dettach();
-  con = null; 
+  //con = null; 
 }
 
 function collide(body,sprite,x)
